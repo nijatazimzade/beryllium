@@ -1,0 +1,17 @@
+﻿@model List<Post>
+
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-6 gtco-news">
+                <h2>News</h2>
+                <ul class="news-wrapper">
+                    <partial name="_NewsPartial">
+                </ul>
+                <button class="btn btn-sm btn-special" id="load-more-btn">Load More</button> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="postCount" value="@ViewBag.Count" />

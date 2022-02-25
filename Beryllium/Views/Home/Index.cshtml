@@ -1,0 +1,116 @@
+﻿@model HomeViewModel
+
+@*--SLIDER--*@
+
+<div class="gtco-container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="owl-carousel owl-carousel-fullwidth">
+                @foreach (Slider item in Model.sliders)
+                {
+                    <div class="item">
+                        <a href="#">
+                            <img src="@item.ImgSrc" alt="@item.ImgTag">
+                            <div class="slider-copy">
+                                <h2>@item.ImgName</h2>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*--WORKS--*@
+
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+                <h2>Work</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="owl-carousel owl-carousel-carousel">
+
+                    @foreach (Work item in Model.works)
+                    {
+                        <div class="item">
+                            <div class="gtco-item">
+                                <a href="#"><img src="@item.WorkImg" alt="" class="img-responsive"></a>
+                                <h2><a href="#">@item.WorkName</a></h2>
+                                <p class="role">@item.WorkPlace</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@*--POSTS AND TESTIMONIALS--*@
+
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-6 gtco-news">
+                <h2>News</h2>
+                <ul>
+                    @foreach (Post item in  Model.posts)
+                    {
+                        <li>
+                            <a href="#">
+                                <span class="post-date">@item.PostDate</span>
+                                <h3>@item.PostTitle</h3>
+                                <p>@item.PostContent</p>
+                            </a>
+                        </li>
+                    }
+                </ul>
+                <p><a href="/News/Index" class="btn btn-sm btn-special">More News</a></p>
+            </div>
+            <div class="col-md-5 col-md-push-1 gtco-testimonials">
+                <h2>Testimonials</h2>
+                @foreach (Testimonial item in Model.testimonials)
+                {
+                    <blockquote>
+                        <p>@item.Text</p>
+                        <p class="author"><cite>@item.Author</cite></p>
+                    </blockquote>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*--FEATURES--*@
+
+<div class="gtco-section gto-features">
+    <div class="gtco-container">
+        <div class="row">
+            @foreach (Feature item in Model.features)
+            {
+                <div class="col-md-4">
+                    <div class="feature-left">
+                        <i class="@item.Icon icon"></i>
+                        <div class="copy">
+                            <h3>@item.Name</h3>
+                            <p>@item.Content</p>
+                            <p><a href="#" class="gtco-more">@item.BtnText</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

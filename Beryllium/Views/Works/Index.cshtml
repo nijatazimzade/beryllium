@@ -1,0 +1,17 @@
+﻿@model List<Work>
+
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+                <h2>Work</h2>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="work-searcher" placeholder="search">
+        </div>
+        <div class="row" id="search-results">
+            <partial name="_WorksPartial">
+        </div>
+    </div>
+</div>

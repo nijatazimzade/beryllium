@@ -1,0 +1,12 @@
+﻿@model List<Work>
+
+@foreach (Work item in Model)
+{
+    <div class="item col-md-4">
+        <div class="gtco-item">
+            <a href="#"><img src="~/@item.WorkImg" alt="" class="img-responsive"></a>
+            <h2><a href="#">@item.WorkName</a></h2>
+            <p class="role">@item.WorkPlace</p>
+        </div>
+    </div>
+}
