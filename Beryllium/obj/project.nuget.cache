@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fup7DyAYNS3ufFALuZPZkHhpdXMjhg4hKBVUF2f9q0pOb91CCUO8GtmQrqQahEKCZ/8Ot0nJe0sK9Ek+OQuFmA==",
+  "dgSpecHash": "HwGzC6O9RLd5+P8oSeDHbs6jfXJ9Xc5uidtPEALchDguRRwk9Zy7Kg+WQFsAIa9A8zpFel8AmF1vbo2s+cgJ4g==",
   "success": true,
-  "projectFilePath": "C:\\Nicat\\codeacademy\\backend\\Beryllium\\Beryllium\\Beryllium.csproj",
+  "projectFilePath": "C:\\nijatazimzade\\codeacademy\\backend\\Beryllium\\Beryllium\\Beryllium.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
